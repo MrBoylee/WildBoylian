@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Boylee — The African Cowboy</title>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Cinzel:wght@400;700;900&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://mrboylee.github.io/Code/universe.css">
+</head>
+<body>
+
+<!-- Dust Particles -->
+<div class="dust-container" id="dustContainer"></div>
+
+<!-- Cinematic Overlays -->
+<div class="vignette"></div>
+<div class="film-grain"></div>
+
+<!-- Navigation -->
+<nav class="nav-bar" id="navbar">
+  <div class="nav-logo">Mr Boylee</div>
+  <ul class="nav-links">
+    <li><a href="#world">The World</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#legend">The Legend</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#feed">Live Feed</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-sun"></div>
+
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+
+  <div class="bird" style="animation-duration: 25s; animation-delay: -5s;">
+    <svg viewBox="0 0 24 12"><path d="M0,6 Q6,0 12,6 Q18,0 24,6 Q18,3 12,6 Q6,3 0,6 Z"/></svg>
+  </div>
+  <div class="bird" style="animation-duration: 30s; animation-delay: -15s; top: 18%;">
+    <svg viewBox="0 0 24 12"><path d="M0,6 Q6,0 12,6 Q18,0 24,6 Q18,3 12,6 Q6,3 0,6 Z"/></svg>
+  </div>
+
+  <div class="hero-horizon"></div>
+
+  <div class="hero-content">
+    <p class="hero-subtitle">Enter the Universe</p>
+    <h1 class="hero-title">MR BOYLEE</h1>
+    <p class="hero-tagline">The African Cowboy</p>
+    <div class="hero-buttons">
+      <a href="#world" class="btn-primary">Enter The Universe</a>
+      <button class="btn-secondary" id="musicToggle">
+        <span class="music-indicator"></span>
+        <span class="music-indicator"></span>
+        <span class="music-indicator"></span>
+        Ambience
+      </button>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- THE WORLD SECTION -->
+<section class="world-section" id="world">
+  <div class="section-header reveal">
+    <span class="section-label">Archive / Database</span>
+    <h2 class="section-title">The Wild Boylian Universe</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="world-grid">
+    <div class="world-card reveal">
+      <div class="card-icon">&#128220;</div>
+      <h3 class="card-title">Western Stories</h3>
+      <p class="card-desc">Tales from the dust trails. Chronicles of riders who vanished into the horizon, leaving only footprints and legends behind.</p>
+    </div>
+    <div class="world-card reveal">
+      <div class="card-icon">&#127760;</div>
+      <h3 class="card-title">Lore & Myth</h3>
+      <p class="card-desc">The hidden history of the Boylian frontier. Ancient maps, forgotten prophecies, and the spirits that guard the desert.</p>
+    </div>
+    <div class="world-card reveal">
+      <div class="card-icon">&#128214;</div>
+      <h3 class="card-title">Character Journals</h3>
+      <p class="card-desc">Personal entries from those who walk the line between law and wilderness. Raw, unfiltered accounts from the road.</p>
+    </div>
+    <div class="world-card reveal">
+      <div class="card-icon">&#128172;</div>
+      <h3 class="card-title">Town Rumors</h3>
+      <p class="card-desc">Whispers from the saloon. What the locals say when the stranger's back is turned. Every rumor holds a grain of truth.</p>
+    </div>
+    <div class="world-card reveal">
+      <div class="card-icon">&#127942;</div>
+      <h3 class="card-title">Missions</h3>
+      <p class="card-desc">Active contracts and bounties. Dangerous paths for those brave enough to ride. Rewards measured in gold and glory.</p>
+    </div>
+    <div class="world-card reveal">
+      <div class="card-icon">&#128308;</div>
+      <h3 class="card-title">Wanted Posters</h3>
+      <p class="card-desc">The faces that haunt the frontier. Outlaws, drifters, and those who refuse to bow. Dead or alive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MUSIC SECTION -->
+<section class="music-section" id="music">
+  <div class="section-header reveal">
+    <span class="section-label">Soundscape</span>
+    <h2 class="section-title">Music & Ambience</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="music-jukebox reveal">
+    <div class="jukebox-header">
+      <h3 class="jukebox-title">The Saloon Jukebox</h3>
+      <p class="jukebox-subtitle">"Every song tells a story the desert remembers"</p>
+    </div>
+
+    <div class="track-list">
+      <div class="track-item" data-track="desert-wind">
+        <span class="track-number">01</span>
+        <div class="track-info">
+          <div class="track-name">The Unknown Rider </div>
+          <div class="track-meta">Atmospheric / Ambient</div>
+        </div>
+        <div class="visualizer">
+          <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <span class="track-duration">3:49</span>
+        <button class="track-play-btn">&#9654;</button>
+      </div>
+
+      <div class="track-item" data-track="lonesome-trail">
+        <span class="track-number">02</span>
+        <div class="track-info">
+          <div class="track-name">Fantasmas de Thorncreek</div>
+          <div class="track-meta">Acoustic / Emotional</div>
+        </div>
+        <div class="visualizer">
+          <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <span class="track-duration">3:18</span>
+        <button class="track-play-btn">&#9654;</button>
+      </div>
+
+      <div class="track-item" data-track="outlaw-dawn">
+        <span class="track-number">03</span>
+        <div class="track-info">
+          <div class="track-name">Outlaw Dawn</div>
+          <div class="track-meta">Cinematic / Orchestra</div>
+        </div>
+        <div class="visualizer">
+          <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <span class="track-duration">2:23</span>
+        <button class="track-play-btn">&#9654;</button>
+      </div>
+
+      <div class="track-item" data-track="saloon-midnight">
+        <span class="track-number">04</span>
+        <div class="track-info">
+          <div class="track-name">Saloon at Midnight</div>
+          <div class="track-meta">Piano / Mysterious</div>
+        </div>
+        <div class="visualizer">
+          <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <span class="track-duration">2:28</span>
+        <button class="track-play-btn">&#9654;</button>
+      </div>
+
+      <div class="track-item" data-track="dust-storm">
+        <span class="track-number">05</span>
+        <div class="track-info">
+          <div class="track-name">Dust Storm Rising</div>
+          <div class="track-meta">Percussion / Intense</div>
+        </div>
+        <div class="visualizer">
+          <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <span class="track-duration">3:18</span>
+        <button class="track-play-btn">&#9654;</button>
+      </div>
+
+      <div class="track-item" data-track="golden-horizon">
+        <span class="track-number">06</span>
+        <div class="track-info">
+          <div class="track-name">The Wild Never Dies</div>
+          <div class="track-meta">Strings / Hopeful</div>
+        </div>
+        <div class="visualizer">
+          <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <span class="track-duration">3:54</span>
+        <button class="track-play-btn">&#9654;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGEND SECTION -->
+<section class="legend-section" id="legend">
+  <div class="section-header reveal">
+    <span class="section-label">Biography</span>
+    <h2 class="section-title">The Legend</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="legend-container reveal">
+    <div class="legend-portrait">
+      <div class="portrait-placeholder">
+        <div class="portrait-silhouette">
+          <div class="portrait-hat"></div>
+        </div>
+      </div>
+      <div class="portrait-frame-corner tl"></div>
+      <div class="portrait-frame-corner tr"></div>
+      <div class="portrait-frame-corner bl"></div>
+      <div class="portrait-frame-corner br"></div>
+    </div>
+
+    <div class="legend-text">
+      <h3>MR BOYLEE</h3>
+      <p class="legend-sub">The African Cowboy</p>
+      <p class="legend-bio">
+        Born where the savanna meets the soul, Mr Boylee emerged from the dust as a figure both feared and revered across the frontier. 
+        They say he rides not for gold, nor for glory, but for the silence between the thunder and the rain. 
+        His hat casts a shadow longer than the trails he's walked, and his eyes hold the warmth of a thousand sunsets.
+        <br><br>
+        In the Boylian Universe, he is neither hero nor villain — he is the wind that turns the page, 
+        the dust that settles on forgotten towns, the legend that outlives the teller. 
+        Some call him a phantom. Others call him justice. The saloon whispers one name: <em>Boomlee</em>.
+      </p>
+      <p class="legend-quote">
+        "The desert doesn't care who you were. It only remembers who you became."
+      </p>
+      <div class="legend-socials">
+        <a href="https://www.instagram.com/mr_boylee" class="social-link" title="Instagram">IG</a>
+        <a href="https://x.com/boyleedalton" class="social-link" title="Twitter">TW</a>
+        <a href="https://www.youtube.com/@MrBoylee" class="social-link" title="YouTube">YT</a>
+        <a href="#" class="social-link" title="Spotify">SP</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section" id="gallery">
+  <div class="section-header reveal">
+    <span class="section-label">Visual Archive</span>
+    <h2 class="section-title">Cinematic Gallery</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-1"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">The Wasteland</span>
+        <span class="gallery-desc">Where the horizon swallows the brave</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-2"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">Midnight Saloon</span>
+        <span class="gallery-desc">Whiskey and secrets after dark</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-3"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">Dust & Gold</span>
+        <span class="gallery-desc">The color of forgotten dreams</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-4"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">The Rider</span>
+        <span class="gallery-desc">Alone, but never lonely</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-1"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">Sunset Ridge</span>
+        <span class="gallery-desc">The day dies beautifully here</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-2"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">Ghost Town</span>
+        <span class="gallery-desc">Echoes of what once was</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-3"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">The Bounty</span>
+        <span class="gallery-desc">Every man has a price</span>
+      </div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <div class="gallery-img gallery-pattern-4"></div>
+      <div class="gallery-overlay">
+        <span class="gallery-caption">Boomlee.</span>
+        <span class="gallery-desc">The name the wind carries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-content">
+    <button class="lightbox-close">&times;</button>
+    <div id="lightboxImg" style="width: 80vw; height: 70vh; background: linear-gradient(135deg, #1a0f08, #3d2211);"></div>
+  </div>
+</div>
+
+<!-- LIVE FEED SECTION -->
+<section class="feed-section" id="feed">
+  <div class="section-header reveal">
+    <span class="section-label">Transmission</span>
+    <h2 class="section-title">Live World Feed</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="feed-container reveal">
+    <div class="feed-header">
+      <div class="feed-status">
+        <div class="status-dot"></div>
+        <span class="status-text">LIVE</span>
+      </div>
+      <span style="font-family: 'Cinzel', serif; font-size: 0.65rem; color: rgba(240,230,210,0.3); letter-spacing: 2px;">BOYLIAN NETWORK</span>
+    </div>
+
+    <div class="feed-list">
+      <div class="feed-item">
+        <span class="feed-time">14:32</span>
+        <div class="feed-content">
+          <div class="feed-title">New Sighting: Dust Rider on Route 7</div>
+          <div class="feed-text">A lone figure spotted riding east toward the canyon. Witnesses describe a wide-brimmed hat and a coat that shimmered like gold in the afternoon sun.</div>
+          <span class="feed-tag tag-news">Sighting</span>
+        </div>
+      </div>
+
+      <div class="feed-item">
+        <span class="feed-time">11:15</span>
+        <div class="feed-content">
+          <div class="feed-title">Mission Update: The Lost Cache</div>
+          <div class="feed-text">Coordinates updated. The buried gold of El Dorado Creek has shifted markers. Only those who read the stars will find the new path.</div>
+          <span class="feed-tag tag-mission">Mission</span>
+        </div>
+      </div>
+
+      <div class="feed-item">
+        <span class="feed-time">09:47</span>
+        <div class="feed-content">
+          <div class="feed-title">Saloon News: New Trouble in Dry Creek</div>
+          <div class="feed-text">The bartender at the Rusty Spur claims three strangers asked about "the African Cowboy" before vanishing into the night. No hoofprints found.</div>
+          <span class="feed-tag tag-news">Rumor</span>
+        </div>
+      </div>
+
+      <div class="feed-item">
+        <span class="feed-time">07:22</span>
+        <div class="feed-content">
+          <div class="feed-title">WARNING: Sandstorm Approaching Sector 4</div>
+          <div class="feed-text">Meteorological scouts report a massive dust front moving west at 40 knots. All riders advised to seek shelter before sundown.</div>
+          <span class="feed-tag tag-warning">Alert</span>
+        </div>
+      </div>
+
+      <div class="feed-item">
+        <span class="feed-time">Yesterday</span>
+        <div class="feed-content">
+          <div class="feed-title">Universe Update: New Territory Mapped</div>
+          <div class="feed-text">The eastern ridges have been charted. Ancient ruins discovered — symbols match the journals found in Boylee's saddlebag. Connection pending.</div>
+          <span class="feed-tag tag-mission">Discovery</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="lantern-glow"></div>
+  <div class="footer-content">
+    <p class="footer-quote">
+      "The desert doesn't forget.<br>
+      It waits."
+    </p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/mr_boylee">Instagram</a>
+      <a href="https://x.com/boyleedalton">Twitter</a>
+      <a href="https://www.youtube.com/@MrBoylee">YouTube</a>
+      <a href="#">Spotify</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 MR BOYLEE — THE AFRICAN COWBOY. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+  <script src="https://mrboylee.github.io/Code/universe.js"></script>
+</body>
+</html>
