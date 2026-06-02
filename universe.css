@@ -63,17 +63,6 @@ body {
   background: linear-gradient(to bottom, rgba(10,6,3,0.95) 0%, transparent 100%);
   transition: all 0.5s ease;
 }
-/* Mr Boylee Header Link */
-.nav-logo-link {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-}
-
-.nav-logo-link:hover .nav-logo {
-  color: var(--gold);
-  text-shadow: 0 0 30px rgba(212,168,75,0.5);
-}
 
 .nav-bar.scrolled {
   background: rgba(10,6,3,0.92); backdrop-filter: blur(10px);
@@ -96,6 +85,19 @@ body {
 }
 .nav-links a:hover { opacity: 1; color: var(--gold); }
 .nav-links a:hover::after { width: 100%; }
+
+/* Mr Boylee Header Link */
+.nav-logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.nav-logo-link:hover .nav-logo {
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(212,168,75,0.5);
+}
+/* End of the Code */
 
 /* ===== HERO SECTION ===== */
 .hero {
