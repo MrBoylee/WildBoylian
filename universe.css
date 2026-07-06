@@ -446,6 +446,16 @@ body {
   border: 1px solid var(--gold); opacity: 0.3;
   animation: portraitGlow 4s ease-in-out infinite;
 }
+
+/* Additional CSS for the Legend Image*/
+.legend-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
 @keyframes portraitGlow {
   0%, 100% { opacity: 0.2; box-shadow: inset 0 0 30px rgba(212,168,75,0.1); }
   50% { opacity: 0.5; box-shadow: inset 0 0 50px rgba(212,168,75,0.2); }
